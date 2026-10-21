@@ -1,111 +1,370 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abhishek Choure - Java Full Stack Developer portfolio">
-  <title>Abhishek Choure | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Abhishek Choure's portfolio - Java Full Stack Developer and Web Developer.">
+  <meta name="theme-color" content="#f8fafc">
+  <title>Abhishek Choure | Developer Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
 </head>
 <body>
+
   <header class="topbar">
-    <nav class="nav wrap">
+    <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#home"><span>AC</span> Abhishek Choure</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Switch to dark mode">🌙</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+
       <ul class="nav-links" id="navLinks">
-        <li><a class="active" href="#home">Home</a></li><li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="cv-btn" href="#contact">Contact Me <span>↗</span></a>
+
+      <a class="nav-cta" href="#contact">Let's Talk ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <!-- HERO -->
+    <section class="hero section" id="home">
       <div class="wrap hero-layout">
         <div class="hero-copy reveal">
+          <span class="availability"><span class="status-dot"></span> Open to Fresher Opportunities</span>
+
           <p class="intro">Hello, I'm</p>
-          <h1>Abhishek <span>Choure</span></h1>
-          <h2>Java Full Stack Developer <b>|</b> B.Tech CSE Graduate</h2>
-          <p class="hero-text">Passionate about building web applications and solving real-world problems with clean code and modern technologies. I enjoy learning new things and turning ideas into functional products.</p>
-          <div class="hero-actions"><a class="btn primary" href="#projects">View My Projects <span>→</span></a><a class="btn outline" href="#contact">Contact Me <span>✉</span></a></div>
+          <h1>Abhishek <span>Choure.</span></h1>
+
+          <h2 class="role-line">
+            <span id="typingText">Java Full Stack Developer</span><span class="cursor">|</span>
+          </h2>
+
+          <p class="hero-text">
+            B.Tech CSE graduate passionate about building web applications,
+            solving problems, and learning modern technologies.
+            Currently developing my skills in Java Full Stack Development.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore Projects <span>↗</span></a>
+            <a class="btn secondary" href="#contact">Contact Me <span>✉</span></a>
+          </div>
+
           <div class="socials">
-            <a href="https://www.linkedin.com/in/abhishek-choure" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌘</a>
-            <a href="mailto:abhishekchoure49@gmail.com" aria-label="Email">✉</a>
+            <a href="https://www.linkedin.com/in/abhishek-choure"
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/abhishek-choure"
+               target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+            <a href="mailto:abhishekchoure49@gmail.com" aria-label="Email">@</a>
           </div>
         </div>
+
         <div class="hero-art reveal">
-          <div class="portrait-ring"><div class="portrait-placeholder"><span>AC</span></div></div>
-          <div class="handwriting">Code<br> Create<br> Grow <i></i></div>
-          <div class="orbit-dot dot-one"></div><div class="orbit-dot dot-two"></div>
+          <div class="decor decor-one"></div>
+          <div class="decor decor-two"></div>
+
+          <div class="profile-card">
+            <div class="profile-top"><span></span><span></span><span></span></div>
+            <div class="avatar">AC</div>
+            <p class="profile-label">HELLO, WORLD!</p>
+            <h3>Building my future<br>one line at a time.</h3>
+            <div class="code-line"><span>const</span> developer = "Abhishek";</div>
+            <div class="code-line"><span>let</span> learning = <b>true</b>;</div>
+            <div class="profile-tags"><span>Java</span><span>SQL</span><span>Web</span></div>
+          </div>
+
+          <div class="floating-badge badge-top">☕ Java Developer</div>
+          <div class="floating-badge badge-bottom">⚡ Always Learning</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint">SCROLL TO EXPLORE ↓</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">GET TO KNOW ME</span>
+          <h2>About <span>Me</span></h2>
+          <p>A little about my journey and what I am working towards.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-panel panel reveal">
+            <div class="panel-icon">👨‍💻</div>
+            <h3>Who I Am</h3>
+            <p>
+              I am a B.Tech Computer Science graduate (2025) with an interest
+              in software development and full stack web technologies.
+            </p>
+            <p>
+              I am currently undergoing Java Full Stack training at JSpiders,
+              Bangalore. I practise Core Java, JDBC, SQL, HTML, CSS and
+              JavaScript by building projects.
+            </p>
+            <p>
+              My goal is to start my software development career, contribute
+              to real projects, and continue learning from experienced developers.
+            </p>
+
+            <div class="detail-list">
+              <div><span>📍</span><span><b>Location</b><small>Bengaluru, India</small></span></div>
+              <div><span>🎓</span><span><b>Education</b><small>B.Tech CSE, 2025</small></span></div>
+              <div><span>💼</span><span><b>Career Goal</b><small>Software Developer</small></span></div>
+            </div>
+          </article>
+
+          <article class="about-highlight panel reveal">
+            <span class="eyebrow">MY MINDSET</span>
+            <h3>Learn.<br>Build.<br><span>Improve.</span></h3>
+            <p>Every project is an opportunity to learn something new.</p>
+            <div class="highlight-bottom">
+              <span class="highlight-symbol">&lt;/&gt;</span>
+              <span>Turning ideas into code</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section wrap" id="about">
-      <div class="about-panel reveal">
-        <h2 class="section-title"><span class="title-icon">♟</span> About Me</h2>
-        <p>I am a B.Tech Computer Science graduate (2025) with a strong interest in full stack development. Currently, I am undergoing Java Full Stack training at JSpiders, Bangalore. I have hands-on practice building web applications using Core Java, JDBC, SQL, HTML, CSS, and JavaScript.</p>
-        <p>I am eager to contribute to a team, learn new technologies, and grow as a developer.</p>
-        <div class="mini-details"><span>⌖ Bengaluru, India</span><span>◆ B.Tech CSE (2025)</span><span>✉ abhishekchoure49@gmail.com</span></div>
-      </div>
-      <div class="skills-panel reveal" id="skills">
-        <h2 class="section-title"><span class="title-icon">&lt;/&gt;</span> Technical Skills</h2>
+    <!-- SKILLS -->
+    <section class="section section-muted" id="skills">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">WHAT I WORK WITH</span>
+          <h2>Technical <span>Skills</span></h2>
+          <p>Technologies I have studied and practised.</p>
+        </div>
+
         <div class="skills-grid">
-          <div class="skill"><b class="java">♨</b><span>Java</span></div>
-          <div class="skill"><b class="db">▤</b><span>JDBC</span></div>
-          <div class="skill"><b class="db">▤</b><span>SQL</span></div>
-          <div class="skill"><b class="mysql">⌁</b><span>MySQL</span></div>
-          <div class="skill"><b class="html">5</b><span>HTML5</span></div>
-          <div class="skill"><b class="css">3</b><span>CSS3</span></div>
-          <div class="skill"><b class="js">JS</b><span>JavaScript</span></div>
-          <div class="skill"><b class="git">◆</b><span>Git & GitHub</span></div>
-          <div class="skill"><b class="vscode">⌘</b><span>VS Code</span></div>
-          <div class="skill"><b class="oop">◎</b><span>OOPs</span></div>
-          <div class="skill"><b class="responsive">▣</b><span>Responsive Design</span></div>
-          <div class="skill"><b class="problem">✣</b><span>Problem Solving</span></div>
+          <article class="skill-card reveal"><span class="skill-icon java">☕</span><h3>Java</h3><p>Core Java, OOPs, Collections</p></article>
+          <article class="skill-card reveal"><span class="skill-icon sql">▤</span><h3>SQL</h3><p>Queries, joins, constraints</p></article>
+          <article class="skill-card reveal"><span class="skill-icon jdbc">⌘</span><h3>JDBC</h3><p>Database connectivity, CRUD basics</p></article>
+          <article class="skill-card reveal"><span class="skill-icon html">5</span><h3>HTML5</h3><p>Semantic markup and forms</p></article>
+          <article class="skill-card reveal"><span class="skill-icon css">3</span><h3>CSS3</h3><p>Layouts, styling, responsive basics</p></article>
+          <article class="skill-card reveal"><span class="skill-icon js">JS</span><h3>JavaScript</h3><p>DOM, events, functions</p></article>
+          <article class="skill-card reveal"><span class="skill-icon db">▥</span><h3>MySQL</h3><p>Tables and database operations</p></article>
+          <article class="skill-card reveal"><span class="skill-icon git">◆</span><h3>Git & GitHub</h3><p>Repositories and project hosting</p></article>
+          <article class="skill-card reveal"><span class="skill-icon hib">H</span><h3>Hibernate</h3><p>Basic ORM concepts</p></article>
         </div>
       </div>
     </section>
 
-    <section class="projects-section wrap" id="projects">
-      <h2 class="section-title reveal"><span class="title-icon">▱</span> Projects</h2>
-      <div class="project-grid">
-        <article class="project-card reveal"><div class="project-image portfolio-preview"><div class="preview-nav">AC <span>Home　 About　 Skills</span></div><div class="preview-copy">Abhishek <b>Choure</b><small>Java Full Stack Developer</small></div><div class="preview-circle">AC</div></div><div class="project-info"><h3>Personal Portfolio Website</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><p>A responsive portfolio website with smooth scrolling, animations, and contact form validation.</p><a href="#contact">View Project <b>→</b></a></div></article>
-        <article class="project-card reveal"><div class="project-image student-preview"><div class="dash-top">Student Management <span>Admin Panel</span></div><div class="dash-stats"><i></i><i></i><i></i></div><div class="dash-table"><i></i><i></i><i></i><i></i></div></div><div class="project-info"><h3>Student Management System</h3><div class="tags"><span>Java</span><span>JDBC</span><span>MySQL</span></div><p>A Java-based application to manage student records with CRUD operations.</p><a href="#contact">View Project <b>→</b></a></div></article>
-        <article class="project-card reveal"><div class="project-image travel-preview"><div class="mountain">✦</div><div class="travel-caption">Explore the world</div></div><div class="project-info"><h3>Intelligent Travel Planner</h3><div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div><p>A travel itinerary concept using prompt engineering and language models.</p><a href="#contact">View Project <b>→</b></a></div></article>
-        <article class="project-card reveal"><div class="project-image quiz-preview"><div class="quiz-box"><b>Online Quiz</b><span>Choose the correct answer</span><i></i><i></i><i></i></div></div><div class="project-info"><h3>Online Quiz Application</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><p>A responsive quiz app with dynamic questions and real-time score calculation.</p><a href="#contact">View Project <b>→</b></a></div></article>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">WHAT I'VE BEEN BUILDING</span>
+          <h2>Featured <span>Projects</span></h2>
+          <p>Explore my work and follow my development journey.</p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <div class="project-visual portfolio-visual">
+              <span class="visual-label">01 / WEB DEVELOPMENT</span>
+              <div class="mini-window">
+                <div class="mini-dots">● ● ●</div>
+                <div class="mini-heading">Hi, I'm <span>Abhishek.</span></div>
+                <div class="mini-line"></div>
+                <div class="mini-line short"></div>
+                <div class="mini-button">My Portfolio ↗</div>
+              </div>
+              <span class="visual-number">01</span>
+            </div>
+            <div class="project-info">
+              <span class="project-type">PERSONAL WEBSITE</span>
+              <h3>Personal Portfolio</h3>
+              <p>A personal website to present my background, technical skills, education, and projects.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://abhishek-choure.github.io/personal-portfolio/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                <a href="https://github.com/abhishek-choure/personal-portfolio" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual quiz-visual">
+              <span class="visual-label">02 / JAVASCRIPT</span>
+              <div class="quiz-mock">
+                <span class="quiz-pill">QUESTION 01</span>
+                <h4>Ready to test<br>your knowledge?</h4>
+                <div class="quiz-option">A. HTML</div>
+                <div class="quiz-option">B. JavaScript</div>
+                <div class="quiz-option">C. CSS</div>
+              </div>
+              <span class="visual-number">02</span>
+            </div>
+            <div class="project-info">
+              <span class="project-type">INTERACTIVE APPLICATION</span>
+              <h3>Online Quiz Application</h3>
+              <p>A quiz application built to practise frontend development and JavaScript DOM interactions.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://github.com/abhishek-choure?tab=repositories" target="_blank" rel="noopener noreferrer">Find Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual student-visual">
+              <span class="visual-label">03 / JAVA & DATABASE</span>
+              <div class="student-mock">
+                <div class="student-mock-title">Student Records</div>
+                <div class="student-row"><span>Student 01</span><i></i></div>
+                <div class="student-row"><span>Student 02</span><i></i></div>
+                <div class="student-row"><span>Student 03</span><i></i></div>
+              </div>
+              <span class="visual-number">03</span>
+            </div>
+            <div class="project-info">
+              <span class="project-type">IN PROGRESS</span>
+              <h3>Student Management System</h3>
+              <p>A Java and database project focused on student records and CRUD operations. Currently under development.</p>
+              <div class="tags"><span>Java</span><span>JDBC</span><span>MySQL</span></div>
+              <div class="project-links">
+                <span class="project-status">● In Development</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
-    <section class="bottom-section wrap">
-      <div class="education" id="education">
-        <h2 class="section-title reveal"><span class="title-icon">◆</span> Education</h2>
-        <div class="education-card reveal">
-          <div class="edu-item"><i></i><div><h3>B.Tech in Computer Science & Engineering (2021–2025)</h3><p>NRI Institute of Information Science & Technology, Bhopal (RGPV)</p><small>CGPA: 6.36 | No Active Backlogs</small></div></div>
-          <div class="edu-item"><i></i><div><h3>Class 12th – Higher Secondary (2021)</h3><p>MP Board, Chhindwara | 63%</p></div></div>
-          <div class="edu-item"><i></i><div><h3>Class 10th – High School (2019)</h3><p>MP Board, Chhindwara | 64.5%</p></div></div>
+    <!-- EDUCATION -->
+    <section class="section section-muted" id="education">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">MY ACADEMIC JOURNEY</span>
+          <h2>Education & <span>Training</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2021 – 2025</span>
+              <h3>B.Tech, Computer Science & Engineering</h3>
+              <p>NRI Institute of Information Science & Technology, Bhopal</p>
+              <p class="muted-text">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)</p>
+              <span class="result-tag">CGPA: 6.36</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2025 – Present</span>
+              <h3>Java Full Stack Training</h3>
+              <p>JSpiders, Bangalore</p>
+              <p class="muted-text">Practising Java, SQL, JDBC, web development, and related technologies.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2021</span>
+              <h3>Class 12th – Higher Secondary</h3>
+              <p>MP Board, Chhindwara</p>
+              <span class="result-tag">63%</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">2019</span>
+              <h3>Class 10th – High School</h3>
+              <p>MP Board, Chhindwara</p>
+              <span class="result-tag">64.5%</span>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="contact" id="contact">
-        <h2 class="section-title reveal"><span class="title-icon">✉</span> Contact Me</h2>
-        <p class="contact-intro reveal">Feel free to reach out for opportunities, collaborations, or just to say hello!</p>
-        <form id="contactForm" class="contact-form reveal" novalidate>
-          <div class="form-row"><div><label for="name">Name *</label><input id="name" name="name" placeholder="Enter your name" required minlength="2"></div><div><label for="email">Email *</label><input id="email" name="email" type="email" placeholder="Enter your email" required></div></div>
-          <label for="message">Message *</label><textarea id="message" name="message" rows="3" placeholder="Write your message..." required minlength="10"></textarea>
-          <p id="formStatus" aria-live="polite"></p><button class="btn primary" type="submit">Send Message <span>➤</span></button>
-          <small class="form-note">Demo form: opens your email app after validation; no messages are stored.</small>
-        </form>
-        <aside class="contact-card reveal"><p>☎ <a href="tel:+919303300354">+91 93033 00354</a></p><p>✉ <a href="mailto:abhishekchoure49@gmail.com">abhishekchoure49@gmail.com</a></p><p>⌖ Bengaluru, India</p><p>in <a href="https://www.linkedin.com/in/abhishek-choure" target="_blank" rel="noopener noreferrer">linkedin.com/in/abhishek-choure</a></p></aside>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2>Have an opportunity? <span>Let's talk.</span></h2>
+          <p>Reach out for fresher opportunities, collaboration, or professional conversations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-details panel reveal">
+            <h3>Get in touch</h3>
+            <p>I'm open to connecting with recruiters and teams looking for an enthusiastic entry-level developer.</p>
+
+            <a class="contact-item" href="mailto:abhishekchoure49@gmail.com">
+              <span>✉</span><span><small>Email me</small><b>abhishekchoure49@gmail.com</b></span>
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/abhishek-choure" target="_blank" rel="noopener noreferrer">
+              <span>in</span><span><small>Connect on LinkedIn</small><b>Abhishek Choure</b></span>
+            </a>
+
+            <a class="contact-item" href="https://github.com/abhishek-choure" target="_blank" rel="noopener noreferrer">
+              <span>GH</span><span><small>Explore my code</small><b>GitHub Profile</b></span>
+            </a>
+
+            <div class="location-note">📍 Bengaluru, India</div>
+          </div>
+
+          <form id="contactForm" class="contact-form panel reveal" novalidate>
+            <h3>Send a message</h3>
+
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" minlength="2" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." minlength="10" required></textarea>
+
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+
+            <button class="btn primary submit-btn" type="submit">Prepare Email <span>↗</span></button>
+            <small class="form-note">This form opens your email app. It does not send or store messages automatically.</small>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Abhishek Choure. All rights reserved.</span><span>Built with <b>♥</b> using HTML, CSS & JavaScript</span><a href="#home" aria-label="Back to top">↑</a></div></footer>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand footer-brand" href="#home"><span>AC</span> Abhishek Choure</a>
+      <p>Built with care using HTML, CSS & JavaScript.</p>
+      <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+      <p class="copyright">© <span id="year"></span> Abhishek Choure</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
   <script src="script.js"></script>
 </body>
 </html>
